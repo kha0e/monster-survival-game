@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monster Survival Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="join-screen" class="screen">
+    <h1>Monster Survival</h1>
+    <p>Choisissez un pseudonyme pour rejoindre la partie.</p>
+    <input type="text" id="nickname" placeholder="Votre pseudo">
+    <button id="join-btn">Rejoindre</button>
+  </div>
+  <div id="game-screen" class="screen hidden">
+    <div id="game-container">
+      <canvas id="game-canvas" width="600" height="600"></canvas>
+      <div id="sidebar">
+        <div id="status">
+          <div id="nickname-display"></div>
+          <div id="hunger-bar">
+            <div id="hunger-fill"></div>
+          </div>
+          <div id="score-display"></div>
+        </div>
+        <div id="inventory">
+          <h3>Inventaire</h3>
+          <ul id="inventory-list"></ul>
+        </div>
+        <div id="chat">
+          <div id="chat-messages"></div>
+          <input type="text" id="chat-input" placeholder="Message...">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
