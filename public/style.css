@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+}
+
+.screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+#join-screen {
+  flex-direction: column;
+  text-align: center;
+}
+
+#join-screen h1 {
+  margin-bottom: 0.5rem;
+}
+
+#join-screen input {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 200px;
+  border: none;
+  border-radius: 4px;
+}
+
+#join-screen button {
+  padding: 0.5rem 1rem;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+#game-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#game-canvas {
+  background-color: #000;
+  image-rendering: pixelated;
+  border: 2px solid #444;
+}
+
+#sidebar {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+#status {
+  margin-bottom: 0.5rem;
+}
+
+#hunger-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #333;
+  border-radius: 4px;
+  margin: 0.25rem 0;
+  overflow: hidden;
+}
+
+#hunger-fill {
+  height: 100%;
+  width: 100%;
+  background-color: #e74c3c;
+}
+
+#inventory {
+  flex-grow: 0;
+  margin-bottom: 0.5rem;
+}
+
+#inventory-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+#inventory-list li {
+  padding: 2px 0;
+}
+
+#chat {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#chat-messages {
+  flex-grow: 1;
+  border: 1px solid #444;
+  padding: 4px;
+  margin-bottom: 4px;
+  overflow-y: auto;
+  background-color: #222;
+}
+
+#chat-input {
+  padding: 0.4rem;
+  border: none;
+  border-radius: 4px;
+}
